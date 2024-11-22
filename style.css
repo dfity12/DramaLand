@@ -1,0 +1,289 @@
+/* CSS untuk Body */
+/* CSS untuk Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gambar latar belakang yang bergerak */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('banner.jpg'); /* Gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Transparansi gambar */
+    animation: moveBackground 30s linear infinite; /* Animasi bergerak */
+    z-index: -1; /* Menempatkan gambar di belakang konten */
+}
+
+/* Animasi untuk gerakan latar belakang */
+@keyframes moveBackground {
+    0% {
+        transform: translateX(0); /* Mulai dari posisi awal */
+    }
+    100% {
+        transform: translateX(-100%); /* Bergerak ke kiri */
+    }
+}
+
+/* CSS untuk Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi transparan background */
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
+/* CSS untuk Banner */
+.banner {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* CSS untuk Main Content */
+.main-content {
+    margin: 20px;
+    padding: 0 10px;
+    z-index: 2;
+}
+
+/* CSS untuk Button */
+.btn {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3700b3;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+/* CSS untuk Header */
+.header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+/* CSS untuk Banner */
+.banner {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* CSS untuk Main Content */
+.main-content {
+    margin: 20px;
+    padding: 0 10px;
+}
+
+/* CSS untuk Grid Container */
+.grid-container {
+    display: grid; /* Menggunakan Grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsif */
+    gap: 20px; /* Memberi jarak antar elemen */
+    padding: 20px;
+    background-color: #f9f9f9; /* Warna latar */
+    justify-content: space-between;
+}
+
+/* CSS untuk Grid Item */
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box; /* Memastikan padding tidak menambah ukuran */
+}
+
+/* CSS untuk Gambar dalam Grid Item */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* CSS untuk Judul dan Deskripsi dalam Grid Item */
+.grid-item h3 {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.grid-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* CSS untuk Button */
+.btn {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3700b3;
+}
+
+/* CSS untuk List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drakor Rating Tertinggi</title>
+    <style>
+        /* CSS untuk memastikan halaman bisa digulir */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Grid untuk item rating */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drakor dengan Rating Terbaik</h1>
+    </header>
+    <main class="main-content">
+        <div class="grid-container">
+            <!-- Contoh grid item -->
+            <div class="grid-item">
+                <img src="drakor1.jpg" alt="Drama 1">
+                <h3>Drama 1</h3>
+                <p>Rating: 9.5/10</p>
+            </div>
+            <div class="grid-item">
+                <img src="drakor2.jpg" alt="Drama 2">
+                <h3>Drama 2</h3>
+                <p>Rating: 9.3/10</p>
+            </div>
+            <!-- Tambahkan lebih banyak grid items sesuai kebutuhan -->
+        </div>
+
+        <!-- Tombol navigasi -->
+        <button class="btn" onclick="window.location.href='index.html'">Kembali</button>
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Tertinggi dan Terbaik Drakor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Pastikan halaman bisa digulir */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+            overflow-y: auto; /* Memungkinkan scroll vertikal */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .banner {
+            width: 100%;
+            max-height: 300px; /* Mengatur ukuran maksimal banner */
+            object-fit: cover;
+        }
+
+        /* Section title */
+        .section-title {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Grid untuk item rating */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05); /* Membuat efek hover */
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .grid-item h3 {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .grid-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .btn {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <main class="main-content">
+        <!-- Bagian Rating Tertinggi -->
+        <section class="section-title">
+            <h2>Drakor dengan Rating Tertinggi</h2>
+        </section>
+        <div class="grid-container">
+            <!-- Grid Item 1 -->
+            <div class="grid-item">
+                <img src="replay.jpg" alt="Drama 1">
+                <h3>Reply 1988 (2015)</h3>
+                <p>Rating: 9.1/10</p>
+            </div>
+            <!-- Grid Item 2 -->
+            <div class="grid-item">
+                <img src="crashlanding on you.jpg" alt="Drama 2">
+                <h3>Crash Landing on You(2020)</h3>
+                <p>Rating: 9.0/10</p>
+            </div>
+            <!-- Grid Item 3 -->
+            <div class="grid-item">
+                <img src="Extraordinary Attorney Woo.jpg" alt="Drama 3">
+                <h3>Extraordinary Attorney Woo (2022)</h3>
+                <p>Rating: 9.0/10</p>
+            </div>
+            <!-- Grid Item 4 -->
+            <div class="grid-item">
+                <img src="Weightlifting Fairy Kim Bok Joo.jpg" alt="Drama 4">
+                <h3>Weightlifting Fairy Kim Bok Joo (2016)</h3>
+                <p>Rating: 8.9/10</p>
+            </div>
+            <!-- Grid Item 5 -->
+            <div class="grid-item">
+                <img src="Goblin.jpg" alt="Drama 5">
+                <h3>Goblin (2016)</h3>
+                <p>Rating: 8.8/10</p>
+            </div>
+            <div class="grid-item">
+                <img src="A Business Proposal.jpg" alt="Drama 6">
+                <h3>A Business Proposal (2023)</h3>
+                <p>Rating: 8.7/10</p>
+            </div>
+            <div class="grid-item">
+                <img src="Hometown Cha-Cha-Cha.jpg" alt="Drama 7">
+                <h3>Hometown Cha-Cha-Cha (2021)</h3>
+                <p>Rating: 8.7/10</p>
+            </div>
+            <div class="grid-item">
+                <img src="Strong Woman Do Bong Soon.jpg" alt="Drama 8">
+                <h3>Strong Woman Do Bong Soon (2017)</h3>
+                <p>Rating: 8.7/10</p>
+            </div>
+            <div class="grid-item">
+                <img src="Fight for My Way.jpg" alt="Drama 9">
+                <h3>Fight for My Way (2017)</h3>
+                <p>Rating: 8.5/10</p>
+            </div>
+        </div>
+        <button class="btn" onclick="window.location.href='index.html'">Kembali</button>
+    </main>
+</body>
+</html>

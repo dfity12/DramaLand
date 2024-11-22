@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drakor</title>
+    <style>
+        /* Reset default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(20, 14, 20);
+            min-height: 100vh; /* Menjamin tinggi halaman penuh */
+            position: relative;
+            overflow-y: auto; /* Memungkinkan scroll secara vertikal */
+        }
+
+        /* Gambar Latar Belakang */
+        .banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Menyesuaikan gambar dengan layar */
+            z-index: -1; /* Di belakang semua konten */
+            animation: moveBackground 20s linear infinite; /* Animasi gambar bergerak */
+        }
+
+        /* Animasi gambar bergerak */
+        @keyframes moveBackground {
+            0% {
+                transform: scale(1) translateX(0); /* Awal */
+            }
+            50% {
+                transform: scale(1.1) translateX(-5%); /* Sedikit membesar dan bergerak ke kiri */
+            }
+            100% {
+                transform: scale(1) translateX(0); /* Kembali ke awal */
+            }
+        }
+
+        /* Header Style */
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 50px 20px;
+            z-index: 1; /* Di atas gambar */
+        }
+
+        .header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(138, 154, 206, 0.7); /* Bayangan teks */
+        }
+
+        /* Style untuk Main Content */
+        .main-content {
+            position: relative;
+            z-index: 1; /* Di atas gambar */
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 30px;
+            background-color: rgba(216, 153, 216, 0.7); /* Warna hitam semi transparan */
+            color: rgb(240, 229, 237);
+            font-size: 1.2em;
+            border: 2px solid rgb(235, 154, 210);
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgba(156, 81, 140, 0.8);
+            color: rgb(243, 180, 227);
+            transform: scale(1.1); /* Membesar saat hover */
+        }
+
+        /* Bagian Komentar, Instagram, dan Langganan */
+        .section {
+            margin-top: 30px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: rgb(12, 10, 12);
+            margin-top: 20px;
+        }
+
+        .comments, .instagram, .subscription {
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+
+        .comments p, .subscription p {
+            font-size: 1.1em;
+            color: rgb(15, 14, 15);
+        }
+
+        .instagram a {
+            font-size: 1.2em;
+            color: #bea6b2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .instagram a:hover {
+            color: #2c1923;
+        }
+
+        .subscription input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            width: 300px;
+            border: 2px solid #1f1b1b;
+            margin-right: 10px;
+        }
+
+        .subscription button {
+            padding: 10px 20px;
+            background-color: rgba(189, 36, 171, 0.7);
+            color: rgb(230, 218, 229);
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscription button:hover {
+            background-color: rgba(219, 100, 199, 0.8);
+            color: rgb(233, 159, 227);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="drakor2.jpg" alt="Banner Drakor" class="banner">
+        <h1>Selamat Datang di Dunia Drakor</h1>
+    </header>
+    <main class="main-content">
+        <button class="btn" onclick="window.location.href='rating.html'">Drakor dengan Rating Terbaik</button>
+        <button class="btn" onclick="window.location.href='rekomendasi.html'">Rekomendasi Drakor</button>
+        <button class="btn" onclick="window.location.href='ongoing.html'">Drakor On-Going</button>
+
+        <!-- Bagian Komentar -->
+        <div class="section comments">
+            <h2>Komentar Pengunjung</h2>
+            <p>"Dunia Drakor membawa saya ke dalam kisah yang tak terlupakan, penuh emosi dan kejutan!" - Pengguna A</p>
+            <p>"Suka banget dengan pilihan drakor yang direkomendasikan, pasti seru untuk ditonton!" - Pengguna B</p>
+            <p>Anda bisa mengirimkan komentar atau request Anda di bawah ini:</p>
+            <textarea rows="4" cols="50" placeholder="Tulis komentar atau request Anda di sini..."></textarea>
+        </div>
+
+        <!-- Bagian Kata-kata Motivasi -->
+        <div class="quote">
+            <p>"Setiap cerita adalah perjalanan. Nikmati setiap detiknya!"</p>
+        </div>
+        <!-- Bagian Langganan -->
+        <div class="section subscription">
+            <p>Berlangganan untuk mendapatkan pembaruan drakor terbaru! <br> "Drakor di website ini akan diganti setiap 1 bulan sekali."</p>
+            <input type="email" placeholder="Masukkan email Anda" required>
+            <button onclick="alert('Terima kasih telah berlangganan!')">Berlangganan</button>
+        </div>
+        <!-- Bagian Instagram Pembuat -->
+        <div class="section instagram">
+            <p>Follow Pembuat di Instagram: <a href="https://x.com/dfity12?" target="_blank">dfity12</a></p>
+        </div>
+    </main>
+</body>
+</html>

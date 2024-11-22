@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Drakor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Pastikan halaman bisa digulir */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+            overflow-y: auto; /* Memungkinkan scroll vertikal */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Grid untuk item rekomendasi Drakor */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+            max-width: 250px;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05); /* Efek hover */
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .grid-item h3 {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .grid-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .btn {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rekomendasi Drakor</h1>
+    </header>
+    <main class="main-content">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="The World of The Married (2020).jpg" alt="The World of The Married">
+                <h3>The World of The Married (2020)</h3>
+                <p>Keadaan seorang dokter medis terhormat yang tampaknya sempurna, berbalik ketika dia menemukan perselingkuhan suaminya.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Hotel de luna.jpg" alt="Hotel Del Luna">
+                <h3>Hotel Del Luna (2019)</h3>
+                <p>Sebuah hotel misterius yang melayani tamu berupa arwah sebelum mereka pergi ke akhirat.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Start up.jpg" alt="Start-Up">
+                <h3>Start-Up (2020)</h3>
+                <p>Kisah perjuangan anak muda untuk membangun perusahaan rintisan di dunia teknologi.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Sky Castle.jpg" alt="Sky Castle">
+                <h3>Sky Castle (2018)</h3>
+                <p>Kejamnya dunia pendidikan.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Screenshot 2024-11-21 093414.png" alt="Mr. Sunshine">
+                <h3>Mr. Sunshine (2018)</h3>
+                <p>Seorang perwira militer Amerika yang kembali ke tanah airnya dan jatuh cinta dengan putri seorang bangsawan.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Mr. Queen (2020).jpg" alt="Mr. Queen">
+                <h3>Mr. Queen (2020)</h3>
+                <p>Seorang laki-laki biasa yang tersasar di tubuh seorang Ratu Kim So-yong pada masa kerajaan.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Itaewon Class.jpg" alt="Itaewon Class">
+                <h3>Itaewon Class (2020)</h3>
+                <p>Antara narapidana Park Saeroyi dan kelompok karyawannya mengubah bar sederhana mereka menjadi pub nomor satu di Itaewon.</p>
+            </div>
+            <div class="grid-item">
+                <img src="king the land.jpg" alt="Itaewon Class">
+                <h3>King the land</h3>
+                <p>Goo Won, pewaris hotel yang dingin, dan Cheon Sa Rang, pegawai hotel ceria. Mereka belajar tentang cinta dan kehangatan emosional meski berbeda sifat.</p>
+            </div>
+            <div class="grid-item">
+                <img src="tale of the nine.jpg" alt="Itaewon Class">
+                <h3>Tale Of The Nine Tailed 1938 </h3>
+                <p>rubah ekor sembilan, atau gumiho yang hidup dengan tujuan menemukan reikarnasi cinta pertamanya.</p>
+            </div>
+            <div class="grid-item">
+                <img src="hi bye mama.jpg" alt="Itaewon Class">
+                <h3>Hi bye mama</h3>
+                <p>Cha Yu Ri, hantu yang diberi kesempatan kembali hidup untuk menyelesaikan urusan dengan suaminya.</p>
+            </div>
+            <div class="grid-item">
+                <img src="welcome to samadlri.jpg" alt="Itaewon Class">
+                <h3>Welcome to samdalri</h3>
+                <p>seorang fotografer sukses yang akhirnya kembali ke desa tempat asalnya.</p>
+            </div>
+        </div>
+        <button class="btn" onclick="window.location.href='index.html'">Kembali</button>
+    </main>
+</body>
+</html>

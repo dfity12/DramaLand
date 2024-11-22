@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drakor On-Going</title>
+    <style>
+        /* CSS untuk memastikan halaman bisa digulir */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Grid untuk item ongoing */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-item h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+            color: #6200ea;
+        }
+
+        .grid-item p {
+            margin: 0 15px;
+            color: #333;
+            font-size: 1em;
+        }
+
+        /* Tombol Kembali */
+        .btn {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 30px auto;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3700b3;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .grid-item img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drakor On-Going</h1>
+    </header>
+    <main class="main-content">
+        <div class="grid-container">
+            <!-- Family by Choice -->
+            <div class="grid-item">
+                <img src="Screenshot 2024-11-21 170752.png" alt="Family by Choice">
+                <h3>Family by Choice (2024)</h3>
+                <p>Tiga sahabat yang telah bersama sejak kecil menghadapi masalah besar yang menguji persahabatan mereka.</p>
+            </div>
+
+            <!-- Gangnam by Side -->
+            <div class="grid-item">
+                <img src="Gangnam by Side (2024).jpg" alt="Gangnam by Side">
+                <h3>Gangnam by Side (2024)</h3>
+                <p>Drama yang mengangkat kehidupan di Gangnam dengan berbagai kisah cinta dan persahabatan yang berliku.</p>
+            </div>
+
+            <!-- Brewing Love -->
+            <div class="grid-item">
+                <img src="Brewing Love (2024).jpg" alt="Brewing Love">
+                <h3>Brewing Love (2024)</h3>
+                <p>Sebuah kisah cinta yang berkembang di dunia kedai kopi, penuh dengan kehangatan dan tantangan.</p>
+            </div>
+
+            <!-- Parole Examiner Lee -->
+            <div class="grid-item">
+                <img src="Parole Examiner Lee (2024).jpg" alt="Parole Examiner Lee">
+                <h3>Parole Examiner Lee (2024)</h3>
+                <p>Seorang pemeriksa parol yang berusaha menegakkan keadilan dan menghadapi dilema moral yang berat.</p>
+            </div>
+        <!-- Tombol Kembali -->
+        <button class="btn" onclick="window.location.href='index.html'">Kembali</button>
+    </main>
+</body>
+</html>
